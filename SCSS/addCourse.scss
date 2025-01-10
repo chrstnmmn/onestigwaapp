@@ -267,10 +267,10 @@
 			}
 			.Terms {
 				width: inherit;
-				gap: 8px;
+				row-gap: 8px;
 
 				.terms-sub {
-					width: inherit;
+					width: 155px;
 					height: 41px;
 
 					flex-direction: row;
@@ -278,7 +278,7 @@
 					justify-content: space-between;
 
 					.inputTerms {
-						width: 72px;
+						width: 40px;
 						height: 25px;
 
 						font-size: 0.75rem;

@@ -305,17 +305,17 @@ button {
   }
   .addCourse .Main-Card .Terms {
     width: inherit;
-    gap: 8px;
+    row-gap: 8px;
   }
   .addCourse .Main-Card .Terms .terms-sub {
-    width: inherit;
+    width: 155px;
     height: 41px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
   .addCourse .Main-Card .Terms .terms-sub .inputTerms {
-    width: 72px;
+    width: 40px;
     height: 25px;
     font-size: 0.75rem;
   }
