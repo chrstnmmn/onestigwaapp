@@ -1,0 +1,26 @@
+@import "style.scss";
+
+.backgroundCircles {
+	width: 100vw;
+	height: 100vh;
+	z-index: -10;
+
+	position: absolute;
+
+	svg {
+		fill: $TextBox;
+	}
+
+	.Circle_TR {
+		transform: translate(85vw);
+	}
+	.Circle_TL {
+		transform: translate(-30vw);
+	}
+	.Circle_LR {
+		transform: translate(80vw);
+	}
+	.Circle_LL {
+		transform: translate(-20vw);
+	}
+}

@@ -1,0 +1,268 @@
+/*CSS RESET*/
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+button {
+  border-style: none;
+}
+
+input,
+button {
+  border-style: none;
+  outline-color: #0b5793;
+}
+
+/*CSS RESET*/
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+button {
+  border-style: none;
+}
+
+input,
+button {
+  border-style: none;
+  outline-color: #0b5793;
+}
+
+body {
+  background-color: #ededed;
+  font-family: "Inter", serif;
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+  min-height: 100vh;
+}
+body .contentWrapper {
+  padding-block: 1rem;
+  overflow: hidden;
+  clip-path: rectangle(100%);
+  padding-inline: 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+body footer {
+  margin-top: auto;
+}
+
+body {
+  height: 100vh;
+  margin-inline: 150px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+body .Title {
+  font-size: 4rem;
+  text-align: center;
+}
+body p {
+  padding: 1em;
+  font-size: 1.5rem;
+  text-align: justify;
+  text-indent: 5rem;
+}
+body ul {
+  list-style: none;
+  padding-left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 25% 1fr 1fr;
+  grid-template-rows: 12vh 1fr 8vh;
+  grid-template-areas: "Navbar Navbar Navbar" "Sidebar Content Content" "Footer Footer Footer";
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+body ul li {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  background-color: #e7c01d;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 800;
+}
+body ul .navbar {
+  grid-area: Navbar;
+}
+body ul .sidebar {
+  grid-area: Sidebar;
+}
+body ul .content {
+  grid-area: Content;
+}
+body ul .footer {
+  grid-area: Footer;
+}
+
+@media screen and (width < 1000px) {
+  body {
+    height: 100vh;
+    margin-inline: 50px;
+  }
+}
+@media screen and (width < 600px) {
+  body {
+    height: 100%;
+    margin-inline: 30px;
+  }
+  body p {
+    font-size: 1rem;
+  }
+  body .Title {
+    font-size: 2rem;
+  }
+  body ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*# sourceMappingURL=ResponsiveTest.css.map */

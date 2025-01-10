@@ -1,0 +1,27 @@
+@import "style.scss";
+
+body {
+	// background: url(../IMG/Pattern\ 45.png) rgba(255, 255, 255, 0) 0% 0% / 30px repeat;
+	background-color: $TextBox;
+	font-family: $Inter;
+	display: flex;
+	flex-direction: column;
+	gap: 5em;
+	min-height: 100vh;
+
+	.contentWrapper {
+		padding-block: 1rem;
+		overflow: hidden;
+		clip-path: rectangle(100%);
+		padding-inline: 1vw;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 6rem;
+	}
+
+	footer {
+		margin-top: auto;
+	}
+}

@@ -1,0 +1,91 @@
+/*CSS RESET*/
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+	margin: 0;
+}
+
+body {
+	/* 3. Add accessible line-height */
+	line-height: 1.5;
+	/* 4. Improve text rendering */
+	-webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+	text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+	isolation: isolate;
+}
+
+button {
+	border-style: none;
+}
+input,
+button {
+	border-style: none;
+	outline-color: #0b5793;
+}
+// Utility Variables
+$Main: #ffffff;
+$Accent01: #e7c01d;
+$Accent02: #0b5793;
+$TextBox: #ededed;
+$Box_Shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.1);
+$Button_Shadow: 0px 4px 0px 0px rgba(231, 192, 29, 0.50);
+$Title_Shadow:  0px 4px 0px 0px rgba(11, 85, 146, 0.75);
+$Box_Border:  3px solid rgba(144, 144, 144, 0.25);
+$Button_Border: 3px solid #F3DF8E;
+$Radius: 10px;
+$Inter: "Inter", serif;
+$transition: .1s cubic-bezier(0.4, 0.01, 0.04, 0.88);
