@@ -79,40 +79,4 @@ button {
   outline-color: #0b5793;
 }
 
-.AddCourseGuide {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  align-items: center;
-}
-.AddCourseGuide img {
-  pointer-events: none;
-  user-select: none;
-}
-.AddCourseGuide p {
-  color: #0b5793;
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-.AddCourseGuide .FirstStep {
-  justify-self: end;
-  align-self: start;
-  margin-top: 8rem;
-  width: 35ch;
-  text-align: end;
-}
-.AddCourseGuide .SecondStep {
-  align-self: center;
-  width: 410px;
-}
-.AddCourseGuide .ThirdStep {
-  align-self: end;
-  margin-bottom: 15px;
-  width: 450px;
-}
-.AddCourseGuide .rightPanel {
-  display: flex;
-  flex-direction: column-reverse;
-}
-
 /*# sourceMappingURL=tutorial.css.map */
