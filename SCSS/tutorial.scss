@@ -1,8 +1,43 @@
 @import "style.scss";
 
-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: $Accent02;
+.AddCourseGuide {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	align-items: center;
+
+	img {
+		pointer-events: none;
+		user-select: none;
+	}
+	p {
+		color: $Accent02;
+		font-size: 1.50rem;
+		font-weight: 500;
+	}
+
+  .FirstStep {
+    justify-self: end;
+    align-self: start;
+
+    margin-top: 8rem;
+
+    width: 35ch;
+    text-align: end;
+  }
+  .SecondStep {
+    align-self: center;
+
+    width: 410px;
+  }
+  .ThirdStep {
+    align-self: end;
+    margin-bottom: 15px;
+
+    width: 450px;
+  }
+	.rightPanel {
+		display: flex;
+		flex-direction: column-reverse;
+	}
 }

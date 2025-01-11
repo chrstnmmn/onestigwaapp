@@ -165,7 +165,7 @@ body {
   font-family: "Inter", serif;
   display: flex;
   flex-direction: column;
-  gap: 5em;
+  gap: 10rem;
   min-height: 100vh;
 }
 body .contentWrapper {
