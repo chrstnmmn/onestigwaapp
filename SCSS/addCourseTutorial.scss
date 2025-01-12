@@ -1,0 +1,313 @@
+@import "style.scss";
+
+.addCourse {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	.title-AddCourse {
+		border-radius: $Radius;
+		background: $Accent02;
+		box-shadow: $Title_Shadow;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 7px;
+
+		width: 594px;
+		height: 47px;
+
+		pointer-events: none;
+		user-select: none;
+
+		margin-bottom: 18px;
+		.icon-AddCourse {
+			width: 25px;
+			height: 22px;
+		}
+		.titleCourse {
+			color: $Main;
+			text-align: center;
+			font-size: 1.5rem;
+			font-weight: 800;
+		}
+	}
+	.Main-Card {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 8px;
+		.dark {
+			.Courses {
+				width: 594px;
+				height: 166px;
+
+				border-radius: $Radius;
+				background: $Main;
+				box-shadow: $Box_Shadow;
+				border: $Box_Border;
+
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: start;
+				gap: 20px;
+
+				padding-inline: 35px;
+
+				.CourseName {
+					display: flex;
+					flex-direction: column;
+					justify-items: center;
+					align-items: start;
+					gap: 4px;
+
+					h2 {
+						color: $Accent02;
+						font-size: 1.25rem;
+						font-weight: 700;
+						pointer-events: none;
+						user-select: none;
+					}
+					.InputC {
+						width: 523px;
+						height: 36px;
+						background-color: $TextBox;
+						border-radius: $Radius;
+
+						color: $Accent02;
+						text-align: center;
+
+						font-size: 1.25rem;
+						font-weight: 600;
+					}
+				}
+				.UnitsInput {
+					width: 524px;
+
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					.UnitsLabel {
+						color: $Accent02;
+						font-size: 1.25rem;
+						font-weight: 700;
+						pointer-events: none;
+						user-select: none;
+					}
+					.units {
+						width: 131px;
+						height: 36px;
+						background-color: $TextBox;
+						border-radius: $Radius;
+
+						color: $Accent02;
+						text-align: center;
+
+						font-size: 1.25rem;
+						font-weight: 600;
+					}
+				}
+			}
+		}
+		.Terms {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-wrap: wrap;
+
+			width: 594px;
+
+			.terms-sub {
+				width: 141px;
+				height: 86px;
+
+				border-radius: $Radius;
+				background: $Main;
+				box-shadow: $Box_Shadow;
+				border: $Box_Border;
+
+				display: flex;
+				flex-direction: column;
+				align-items: start;
+				justify-content: center;
+				gap: 4px;
+
+				padding-inline: 14px;
+
+				h3 {
+					color: $Accent02;
+					font-size: 1rem;
+					font-weight: 700;
+				}
+				.inputTerms {
+					width: 113px;
+					height: 31px;
+
+					background-color: $TextBox;
+					border-radius: $Radius;
+
+					color: $Accent02;
+					text-align: center;
+
+					font-size: 1rem;
+					font-weight: 600;
+				}
+			}
+		}
+		.buttonAdd {
+			align-self: flex-end;
+
+			width: 144px;
+			height: 31px;
+
+			border-radius: 30px;
+			background: $Accent01;
+			box-shadow: $Button_Shadow;
+			border: $Button_Border;
+
+			display: flex;
+			align-items: center;
+			justify-content: end;
+
+			transition: $transition;
+
+			.add-icons {
+				display: flex;
+				flex-direction: row-reverse;
+				justify-content: center;
+				align-items: center;
+				gap: 10px;
+
+				transition: transform $transition;
+
+				svg {
+					width: 20px;
+					height: 20px;
+					transform: rotate(0deg);
+					transition: transform $transition;
+				}
+
+				h6 {
+					color: $Main;
+					text-align: center;
+					font-size: 0.875rem;
+					font-weight: 700;
+					white-space: nowrap;
+				}
+			}
+			&:hover {
+				transform: scale(1.05);
+
+				cursor: pointer;
+				svg {
+					transform: rotate(90deg);
+				}
+			}
+			&:active {
+				transform: scale(0.9);
+				svg {
+					transform: rotate(180deg);
+				}
+			}
+		}
+	}
+}
+
+@media screen and (width < 700px) {
+	.addCourse {
+		.title-AddCourse {
+			width: 280px;
+			height: 30px;
+
+			.icon-AddCourse {
+				width: 18px;
+				height: 14px;
+			}
+			.titleCourse {
+				font-size: 1rem;
+				font-weight: 700;
+			}
+		}
+		.Main-Card {
+			width: 315px;
+			gap: 8px;
+
+			.Courses {
+				width: inherit;
+				height: 105px;
+
+				gap: 8px;
+
+				padding-inline: 22px;
+
+				.CourseName {
+					h2 {
+						font-size: 1rem;
+					}
+					.InputC {
+						width: 274px;
+						height: 25px;
+						font-size: 0.75rem;
+					}
+				}
+				.UnitsInput {
+					width: 274px;
+
+					.UnitsLabel {
+						font-size: 1rem;
+					}
+					.units {
+						width: 72px;
+						height: 25px;
+
+						font-size: 0.75rem;
+					}
+				}
+			}
+			.Terms {
+				width: inherit;
+				row-gap: 8px;
+
+				.terms-sub {
+					width: 155px;
+					height: 41px;
+
+					flex-direction: row;
+					align-items: center;
+					justify-content: space-between;
+
+					.inputTerms {
+						width: 40px;
+						height: 25px;
+
+						font-size: 0.75rem;
+					}
+				}
+			}
+			.buttonAdd {
+				width: 108px;
+				height: 30px;
+
+				justify-content: center;
+
+				border-radius: 10px;
+
+				.add-icons {
+					gap: 15px;
+
+					svg {
+						display: none;
+						width: 18px;
+						height: 18px;
+					}
+					h6 {
+						font-size: 0.75rem;
+					}
+				}
+			}
+		}
+	}
+}
