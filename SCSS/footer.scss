@@ -1,21 +1,23 @@
 @import "style.scss";
 
 footer {
-	width: 100%;
-	h6 {
-		color: $Main;
-		background-color: $Accent02;
-		text-align: center;
-		font-size: 0.875rem;
-		font-weight: 400;
-		padding-block: 1em;
-	}
+  width: 100%;
+  background-color: $Accent02;
+
+  h6 {
+    color: $Main;
+
+    text-align: center;
+    font-size: 0.875rem;
+    font-weight: 400;
+    // padding-block: 1em;
+  }
 }
 
 @media screen and (width < 700px) {
-	footer {
-		h6 {
-			font-size: 0.625em;
-		}
-	}
+  footer {
+    h6 {
+      font-size: 0.625em;
+    }
+  }
 }

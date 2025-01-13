@@ -82,16 +82,16 @@ button {
 body {
   background-color: #ededed;
   font-family: "Inter", serif;
-  display: flex;
-  flex-direction: column;
-  gap: 10rem;
-  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 80px 1fr 50px;
+  grid-template-areas: "Header" "Content" "Footer";
+  height: 100vh;
+}
+body header {
+  grid-area: Header;
 }
 body .contentWrapper {
-  padding-block: 1rem;
-  overflow: hidden;
-  clip-path: rectangle(100%);
-  padding-inline: 1vw;
+  grid-area: Content;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -99,7 +99,10 @@ body .contentWrapper {
   gap: 6rem;
 }
 body footer {
-  margin-top: auto;
+  grid-area: Footer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -81,14 +81,13 @@ button {
 
 footer {
   width: 100%;
+  background-color: #0b5793;
 }
 footer h6 {
   color: #ffffff;
-  background-color: #0b5793;
   text-align: center;
   font-size: 0.875rem;
   font-weight: 400;
-  padding-block: 1em;
 }
 
 @media screen and (width < 700px) {

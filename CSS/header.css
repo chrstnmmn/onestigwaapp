@@ -80,7 +80,6 @@ button {
 }
 
 header {
-  height: 80px;
   flex-shrink: 0;
   position: sticky;
   z-index: 100;
