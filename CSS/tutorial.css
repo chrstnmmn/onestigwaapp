@@ -88,7 +88,8 @@ body .Tutorial-Wrapper {
   justify-content: center;
 }
 body .Tutorial-Wrapper .First-Layer,
-body .Tutorial-Wrapper .Second-Layer {
+body .Tutorial-Wrapper .Second-Layer,
+body .Tutorial-Wrapper .Third-Layer {
   grid-area: 1/1;
 }
 body .Tutorial-Wrapper .BGLayer {

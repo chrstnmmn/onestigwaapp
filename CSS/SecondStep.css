@@ -79,16 +79,16 @@ button {
   outline-color: #0b5793;
 }
 
-.First-Step {
+.Second-Step {
   position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 4px;
-  transform: translate(120px, 80px);
+  transform: translate(274px, 95px);
 }
-.First-Step p {
-  width: 351px;
+.Second-Step p {
+  width: 320px;
   border-radius: 10px;
   border: 3px solid rgba(144, 144, 144, 0.25);
   background: #ffffff;
@@ -98,8 +98,56 @@ button {
   font-weight: 700;
   padding: 7px 14px;
 }
-.First-Step .buttonNext {
+.Second-Step .Buttons {
   align-self: flex-end;
+  display: flex;
+  column-gap: 6px;
+}
+.Second-Step .Buttons .buttonPrev {
+  width: 105px;
+  height: 31px;
+  border-radius: 30px;
+  background: #e7c01d;
+  box-shadow: 0px 4px 0px 0px rgba(231, 192, 29, 0.5);
+  border: 3px solid #F3DF8E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.1s cubic-bezier(0.4, 0.01, 0.04, 0.88);
+}
+.Second-Step .Buttons .buttonPrev .Prev-icon {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: transform 0.1s cubic-bezier(0.4, 0.01, 0.04, 0.88);
+}
+.Second-Step .Buttons .buttonPrev .Prev-icon svg {
+  width: 20px;
+  height: 20px;
+  transform: rotate(0deg);
+  transition: transform 0.1s cubic-bezier(0.4, 0.01, 0.04, 0.88);
+}
+.Second-Step .Buttons .buttonPrev .Prev-icon h6 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.Second-Step .Buttons .buttonPrev:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.Second-Step .Buttons .buttonPrev:hover svg {
+  transform: rotate(360deg);
+}
+.Second-Step .Buttons .buttonPrev:active {
+  transform: scale(0.9);
+}
+.Second-Step .Buttons .buttonPrev:active svg {
+  transform: rotate(180deg);
+}
+.Second-Step .Buttons .buttonNext {
   width: 70px;
   height: 31px;
   border-radius: 30px;
@@ -111,55 +159,61 @@ button {
   justify-content: center;
   transition: 0.1s cubic-bezier(0.4, 0.01, 0.04, 0.88);
 }
-.First-Step .buttonNext .Next-icon {
+.Second-Step .Buttons .buttonNext .Next-icon {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
   gap: 4px;
   transition: transform 0.1s cubic-bezier(0.4, 0.01, 0.04, 0.88);
 }
-.First-Step .buttonNext .Next-icon svg {
+.Second-Step .Buttons .buttonNext .Next-icon svg {
   width: 20px;
   height: 20px;
   transform: rotate(0deg);
   transition: transform 0.1s cubic-bezier(0.4, 0.01, 0.04, 0.88);
 }
-.First-Step .buttonNext .Next-icon h6 {
+.Second-Step .Buttons .buttonNext .Next-icon h6 {
   color: #ffffff;
   text-align: center;
   font-size: 0.875rem;
   font-weight: 700;
   white-space: nowrap;
 }
-.First-Step .buttonNext:hover {
+.Second-Step .Buttons .buttonNext:hover {
   transform: scale(1.05);
   cursor: pointer;
 }
-.First-Step .buttonNext:hover svg {
+.Second-Step .Buttons .buttonNext:hover svg {
   transform: rotate(360deg);
 }
-.First-Step .buttonNext:active {
+.Second-Step .Buttons .buttonNext:active {
   transform: scale(0.9);
 }
-.First-Step .buttonNext:active svg {
+.Second-Step .Buttons .buttonNext:active svg {
   transform: rotate(180deg);
 }
 
 @media screen and (width < 700px) {
-  .First-Step {
-    transform: translate(32px, 35px);
+  .Second-Step {
+    transform: translate(85px, 90px);
   }
-  .First-Step p {
-    width: 250px;
+  .Second-Step p {
+    width: 230px;
     font-size: 0.625rem;
     padding: 4px 10px;
   }
-  .First-Step .buttonNext {
+  .Second-Step .Buttons .buttonPrev {
+    width: 90px;
+  }
+  .Second-Step .Buttons .buttonPrev .Prev-icon svg {
+    display: none;
+  }
+  .Second-Step .Buttons .buttonNext {
     width: 60px;
   }
-  .First-Step .buttonNext .Next-icon svg {
+  .Second-Step .Buttons .buttonNext .Next-icon svg {
     display: none;
   }
 }
 
-/*# sourceMappingURL=FirstStep.css.map */
+/*# sourceMappingURL=SecondStep.css.map */
