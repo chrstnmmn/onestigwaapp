@@ -7,7 +7,7 @@
   align-items: center;
   row-gap: 4px;
 
-  transform: translate(120px, 85px);
+  transform: translate(120px, 80px);
   p {
     width: 351px;
 
@@ -25,7 +25,7 @@
   .buttonNext {
     align-self: flex-end;
 
-    width: 80px;
+    width: 90px;
     height: 31px;
 
     border-radius: 30px;
@@ -43,7 +43,7 @@
       display: flex;
       flex-direction: row-reverse;
       align-items: center;
-      gap: 8px;
+      gap: 10px;
 
       transition: transform $transition;
 

@@ -85,7 +85,7 @@ button {
   flex-direction: column;
   align-items: center;
   row-gap: 4px;
-  transform: translate(120px, 85px);
+  transform: translate(120px, 80px);
 }
 .First-Step p {
   width: 351px;
@@ -100,7 +100,7 @@ button {
 }
 .First-Step .buttonNext {
   align-self: flex-end;
-  width: 80px;
+  width: 90px;
   height: 31px;
   border-radius: 30px;
   background: #e7c01d;
@@ -115,7 +115,7 @@ button {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   transition: transform 0.1s cubic-bezier(0.4, 0.01, 0.04, 0.88);
 }
 .First-Step .buttonNext .Next-icon svg {
