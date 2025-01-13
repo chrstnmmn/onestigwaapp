@@ -116,7 +116,7 @@ button {
   align-items: center;
   gap: 8px;
 }
-.addCourse .Main-Card .dark .Courses {
+.addCourse .Main-Card .Courses {
   width: 594px;
   height: 166px;
   border-radius: 10px;
@@ -130,21 +130,21 @@ button {
   gap: 20px;
   padding-inline: 35px;
 }
-.addCourse .Main-Card .dark .Courses .CourseName {
+.addCourse .Main-Card .Courses .CourseName {
   display: flex;
   flex-direction: column;
   justify-items: center;
   align-items: start;
   gap: 4px;
 }
-.addCourse .Main-Card .dark .Courses .CourseName h2 {
+.addCourse .Main-Card .Courses .CourseName h2 {
   color: #0b5793;
   font-size: 1.25rem;
   font-weight: 700;
   pointer-events: none;
   user-select: none;
 }
-.addCourse .Main-Card .dark .Courses .CourseName .InputC {
+.addCourse .Main-Card .Courses .CourseName .InputC {
   width: 523px;
   height: 36px;
   background-color: #ededed;
@@ -154,20 +154,20 @@ button {
   font-size: 1.25rem;
   font-weight: 600;
 }
-.addCourse .Main-Card .dark .Courses .UnitsInput {
+.addCourse .Main-Card .Courses .UnitsInput {
   width: 524px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.addCourse .Main-Card .dark .Courses .UnitsInput .UnitsLabel {
+.addCourse .Main-Card .Courses .UnitsInput .UnitsLabel {
   color: #0b5793;
   font-size: 1.25rem;
   font-weight: 700;
   pointer-events: none;
   user-select: none;
 }
-.addCourse .Main-Card .dark .Courses .UnitsInput .units {
+.addCourse .Main-Card .Courses .UnitsInput .units {
   width: 131px;
   height: 36px;
   background-color: #ededed;

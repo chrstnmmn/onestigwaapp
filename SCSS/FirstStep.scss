@@ -1,0 +1,101 @@
+@import "style.scss";
+
+.First-Step {
+  position: absolute;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  row-gap: 4px;
+
+  transform: translate(120px, 85px);
+  p {
+    width: 351px;
+
+    border-radius: $Radius;
+    border: $Box_Border;
+    background: $Main;
+    box-shadow: $Box_Shadow;
+    color: $Accent02;
+
+    font-size: .875rem;
+    font-weight: 700;
+
+    padding: 7px 14px;
+  }
+  .buttonNext {
+    align-self: flex-end;
+
+    width: 80px;
+    height: 31px;
+
+    border-radius: 30px;
+    background: $Accent01;
+    box-shadow: $Button_Shadow;
+    border: $Button_Border;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: $transition;
+
+    .Next-icon {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      gap: 8px;
+
+      transition: transform $transition;
+
+      svg {
+        width: 20px;
+        height: 20px;
+        transform: rotate(0deg);
+        transition: transform $transition;
+      }
+
+      h6 {
+        color: $Main;
+        text-align: center;
+        font-size: 0.875rem;
+        font-weight: 700;
+        white-space: nowrap;
+      }
+    }
+    &:hover {
+      transform: scale(1.05);
+
+      cursor: pointer;
+      svg {
+        transform: rotate(360deg);
+      }
+    }
+    &:active {
+      transform: scale(0.9);
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+@media screen and (width < 700px) {
+  .First-Step {
+    transform: translate(32px, 35px);
+
+    p {
+      width: 250px;
+
+      font-size: 0.625rem;
+      padding: 4px 10px;
+    }
+    .buttonNext {
+      width: 60px;
+      .Next-icon {
+        svg  {
+          display: none;
+        }
+      }
+    }
+  }
+}

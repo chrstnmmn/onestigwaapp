@@ -1,0 +1,165 @@
+/*CSS RESET*/
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+button {
+  border-style: none;
+}
+
+input,
+button {
+  border-style: none;
+  outline-color: #0b5793;
+}
+
+.First-Step {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 4px;
+  transform: translate(120px, 85px);
+}
+.First-Step p {
+  width: 351px;
+  border-radius: 10px;
+  border: 3px solid rgba(144, 144, 144, 0.25);
+  background: #ffffff;
+  box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.1);
+  color: #0b5793;
+  font-size: 0.875rem;
+  font-weight: 700;
+  padding: 7px 14px;
+}
+.First-Step .buttonNext {
+  align-self: flex-end;
+  width: 80px;
+  height: 31px;
+  border-radius: 30px;
+  background: #e7c01d;
+  box-shadow: 0px 4px 0px 0px rgba(231, 192, 29, 0.5);
+  border: 3px solid #F3DF8E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.1s cubic-bezier(0.4, 0.01, 0.04, 0.88);
+}
+.First-Step .buttonNext .Next-icon {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.1s cubic-bezier(0.4, 0.01, 0.04, 0.88);
+}
+.First-Step .buttonNext .Next-icon svg {
+  width: 20px;
+  height: 20px;
+  transform: rotate(0deg);
+  transition: transform 0.1s cubic-bezier(0.4, 0.01, 0.04, 0.88);
+}
+.First-Step .buttonNext .Next-icon h6 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.First-Step .buttonNext:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.First-Step .buttonNext:hover svg {
+  transform: rotate(360deg);
+}
+.First-Step .buttonNext:active {
+  transform: scale(0.9);
+}
+.First-Step .buttonNext:active svg {
+  transform: rotate(180deg);
+}
+
+@media screen and (width < 700px) {
+  .First-Step {
+    transform: translate(32px, 35px);
+  }
+  .First-Step p {
+    width: 250px;
+    font-size: 0.625rem;
+    padding: 4px 10px;
+  }
+  .First-Step .buttonNext {
+    width: 60px;
+  }
+  .First-Step .buttonNext .Next-icon svg {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=FirstStep.css.map */

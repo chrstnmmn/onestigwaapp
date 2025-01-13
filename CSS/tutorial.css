@@ -87,11 +87,9 @@ body .Tutorial-Wrapper {
   align-items: center;
   justify-content: center;
 }
-body .Tutorial-Wrapper .First-Layer {
+body .Tutorial-Wrapper .First-Layer,
+body .Tutorial-Wrapper .Second-Layer {
   grid-area: 1/1;
-}
-body .Tutorial-Wrapper .First-Layer h1 {
-  text-align: center;
 }
 body .Tutorial-Wrapper .BGLayer {
   grid-area: 1/1;

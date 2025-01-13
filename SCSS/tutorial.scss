@@ -12,12 +12,9 @@ body {
 		align-items: center;
 		justify-content: center;
 
-		.First-Layer {
+		.First-Layer,
+		.Second-Layer {
 			grid-area: 1/1;
-
-			h1 {
-				text-align: center;
-			}
 		}
 
 		.BGLayer {
