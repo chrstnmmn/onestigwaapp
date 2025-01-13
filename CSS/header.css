@@ -113,7 +113,6 @@ header a {
 
 @media screen and (width < 1000px) {
   header {
-    height: 70px;
     border-top: 8px solid #e7c01d;
   }
   header .logo {
@@ -125,7 +124,6 @@ header a {
 }
 @media screen and (width < 700px) {
   header {
-    height: 40px;
     border-top: 6px solid #e7c01d;
     background: #0b5793;
     align-items: center;
