@@ -89,8 +89,15 @@ body .Tutorial-Wrapper {
 }
 body .Tutorial-Wrapper .First-Layer,
 body .Tutorial-Wrapper .Second-Layer,
-body .Tutorial-Wrapper .Third-Layer {
+body .Tutorial-Wrapper .Third-Layer,
+body .Tutorial-Wrapper .Fourth-Layer {
   grid-area: 1/1;
+}
+body .Tutorial-Wrapper .Fourth-Layer .addCourse .buttonADD {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 body .Tutorial-Wrapper .BGLayer {
   grid-area: 1/1;
