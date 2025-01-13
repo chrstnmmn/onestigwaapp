@@ -39,7 +39,7 @@ header {
 }
 @media screen and (width < 1000px) {
 	header {
-		height: 70px;
+		// height: 70px;
 		border-top: 8px solid $Accent01;
 
 		.logo {
@@ -53,7 +53,7 @@ header {
 
 @media screen and (width < 700px) {
 	header {
-		height: 40px;
+		// height: 40px;
 		border-top: 6px solid $Accent01;
 		background: $Accent02;
 

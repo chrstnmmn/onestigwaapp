@@ -1,39 +1,51 @@
 @import "style.scss";
 
 body {
-  // background: url(../IMG/Pattern\ 45.png) rgba(255, 255, 255, 0) 0% 0% / 30px repeat;
-  background-color: $TextBox;
-  font-family: $Inter;
-  display: grid;
-  grid-template-rows: 80px 1fr 50px;
-  grid-template-areas:
-    "Header"
-    "Content"
-    "Footer";
+	// background: url(../IMG/Pattern\ 45.png) rgba(255, 255, 255, 0) 0% 0% / 30px repeat;
+	background-color: $TextBox;
+	font-family: $Inter;
+	display: grid;
+	grid-template-rows: 80px 1fr 50px;
+	grid-template-areas:
+		"Header"
+		"Content"
+		"Footer";
 
-  height: 100vh;
+	height: 100vh;
 
-  header {
-    grid-area: Header;
-  }
+	header {
+		grid-area: Header;
+	}
 
-  .contentWrapper {
-    grid-area: Content;
+	.contentWrapper {
+		grid-area: Content;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 6rem;
-  }
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 6rem;
+	}
 
-  footer {
-    grid-area: Footer;
+	footer {
+		grid-area: Footer;
 
-    display: flex;
+		display: flex;
 		flex-direction: column;
 		justify-content: center;
 
-    // margin-top: auto;
+		// margin-top: auto;
+	}
+}
+
+@media screen and (width < 1000px) {
+  body {
+    grid-template-rows: 70px 1fr 40px;
+  }
+}
+
+@media screen and (width < 700px) {
+  body {
+    grid-template-rows: 40px 1fr 30px;
   }
 }
