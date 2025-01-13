@@ -79,8 +79,24 @@ button {
   outline-color: #0b5793;
 }
 
-body {
-  height: 100vh;
+body .Tutorial-Wrapper {
+  height: inherit;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-content: center;
+}
+body .Tutorial-Wrapper .First-Layer {
+  grid-area: 1/1;
+}
+body .Tutorial-Wrapper .First-Layer h1 {
+  text-align: center;
+}
+body .Tutorial-Wrapper .BGLayer {
+  grid-area: 1/1;
+  height: inherit;
+  background-color: rgba(7, 7, 7, 0.8);
 }
 
 /*# sourceMappingURL=tutorial.css.map */

@@ -3,5 +3,29 @@
 $DarkBG: rgba(7, 7, 7, 0.8);
 
 body {
-	height: 100vh;
+	.Tutorial-Wrapper {
+		height: inherit;
+
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+		align-items: center;
+		justify-content: center;
+
+		.First-Layer {
+			grid-area: 1/1;
+
+			h1 {
+				text-align: center;
+			}
+		}
+
+		.BGLayer {
+			grid-area: 1/1;
+			height: inherit;
+			background-color: $DarkBG;
+		}
+	}
+
+	
 }
