@@ -178,6 +178,7 @@ body .contentWrapper {
   justify-content: center;
   align-items: center;
   gap: 6rem;
+  padding-block: 5rem;
 }
 body footer {
   grid-area: Footer;
