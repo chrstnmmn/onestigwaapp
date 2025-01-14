@@ -6,7 +6,7 @@ window.onload = () => {
 
 // the function where in which step should be shown first when the page is loaded
 function ShowDOM() {
-  const SecondLayer = document.querySelector(".Third-Layer");
+  const SecondLayer = document.querySelector(".Second-Layer");
   SecondLayer.style.display = "block";
 }
 
@@ -53,7 +53,7 @@ function GetAllElement() {
 }
 
 function SelectDomElement(domeIndex) {
-  
+  console.log("Current item count: ", domeIndex);
+  console.log("Item selected: ", domeElements[domeIndex]);
 
-  return console.log("current item selected: ", domeIndex);
 }
