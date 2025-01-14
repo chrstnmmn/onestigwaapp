@@ -6,7 +6,7 @@ window.onload = () => {
 
 // the function where in which step should be shown first when the page is loaded
 function ShowDOM() {
-  const SecondLayer = document.querySelector(".Second-Layer");
+  const SecondLayer = document.querySelector(".Third-Layer");
   SecondLayer.style.display = "block";
 }
 
