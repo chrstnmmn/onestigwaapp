@@ -104,5 +104,15 @@ body .Tutorial-Wrapper .BGLayer {
   height: inherit;
   background-color: rgba(7, 7, 7, 0.8);
 }
+body .Tutorial-Wrapper ::placeholder {
+  color: #0b5793;
+  font-size: 1rem;
+}
+
+@media screen and (width < 700px) {
+  body .Tutorial-Wrapper ::placeholder {
+    font-size: 0.75rem;
+  }
+}
 
 /*# sourceMappingURL=tutorial.css.map */

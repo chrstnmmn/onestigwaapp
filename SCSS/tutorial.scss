@@ -35,7 +35,20 @@ body {
 			height: inherit;
 			background-color: $DarkBG;
 		}
-	}
 
-	
+		::placeholder {
+			color: $Accent02;
+			font-size: 1rem; 
+		}
+	}
+}
+
+@media screen and (width < 700px) {
+	body {
+		.Tutorial-Wrapper {
+			::placeholder {
+				font-size: .75rem;
+			}
+		}
+	}
 }
