@@ -42,12 +42,14 @@ function DecrementValue() {
 // this function is for getting all the DOM that relates to step-by-step
 const domeElements = [];
 function GetAllElement() {
+  // creating an array for getting all the DOM elements
 	const steps = [
 		document.querySelector(".Second-Layer"),
 		document.querySelector(".Third-Layer"),
 		document.querySelector(".Fourth-Layer"),
 	];
 
+  // then pushing each step inside of another array for accessing the DOM attributes
 	steps.forEach((step, index) => {
 		if (step) {
 			domeElements.push(step);
@@ -60,6 +62,9 @@ function GetAllElement() {
 	console.log("lists of items: ", domeElements);
 }
 
+// here in this function it basically check if the element that is currently selected matches the index inside the 
+// domeElements array, if it matches the DOM element correspond with its index will be shown in the page,
+// while the rest are hidden behind.
 function SelectDomElement(domeIndex) {
 	console.log("Current item count: ", domeIndex);
 	console.log("Item selected: ", domeElements[domeIndex]);
