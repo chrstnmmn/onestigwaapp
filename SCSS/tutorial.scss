@@ -12,11 +12,19 @@ body {
 		align-items: center;
 		justify-content: center;
 
-		.First-Layer,
+		.First-Layer-First,
+		.First-Layer-Second,
 		.Second-Layer,
 		.Third-Layer,
-		.Fourth-Layer {
+		.Fourth-Layer,
+		.Fifth-Layer {
 			grid-area: 1/1;
+		}
+
+		.First-Layer-First,
+		.First-Layer-Second {
+			pointer-events: none;
+			user-select: none;
 		}
 
 		.Fourth-Layer {

@@ -512,3 +512,4 @@ function clearForms() {
 	document.getElementById("finalInput").value = "";
 	console.log("Item Cleared");
 }
+

@@ -87,11 +87,18 @@ body .Tutorial-Wrapper {
   align-items: center;
   justify-content: center;
 }
-body .Tutorial-Wrapper .First-Layer,
+body .Tutorial-Wrapper .First-Layer-First,
+body .Tutorial-Wrapper .First-Layer-Second,
 body .Tutorial-Wrapper .Second-Layer,
 body .Tutorial-Wrapper .Third-Layer,
-body .Tutorial-Wrapper .Fourth-Layer {
+body .Tutorial-Wrapper .Fourth-Layer,
+body .Tutorial-Wrapper .Fifth-Layer {
   grid-area: 1/1;
+}
+body .Tutorial-Wrapper .First-Layer-First,
+body .Tutorial-Wrapper .First-Layer-Second {
+  pointer-events: none;
+  user-select: none;
 }
 body .Tutorial-Wrapper .Fourth-Layer .addCourse .buttonADD {
   align-self: flex-end;
