@@ -86,6 +86,9 @@ function SelectDOMLayers(layersCount) {
 			FirstLayerFirst.style.display = elementDisplay.hideElement;
 			FirstLayerSecond.style.display = elementDisplay.showElement;
 			break;
+		default:
+			console.log("No more layers to show");
+			break;
 	}
 }
 
