@@ -50,116 +50,110 @@ body {
 			}
 		}
 
+		.buttonPrev {
+			width: 105px;
+			height: 31px;
+
+			border-radius: 30px;
+			background: $Accent01;
+			box-shadow: $Button_Shadow;
+			border: $Button_Border;
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			transition: $transition;
+
+			.Prev-icon {
+				display: flex;
+				align-items: center;
+				gap: 4px;
+
+				transition: transform $transition;
+
+				svg {
+					width: 17px;
+					height: 17px;
+					transform: rotate(0deg);
+					transition: transform $transition;
+				}
+
+				h6 {
+					color: $Main;
+					text-align: center;
+					font-size: 0.875rem;
+					font-weight: 700;
+					white-space: nowrap;
+				}
+			}
+		}
+
+		.buttonNext {
+
+			align-self: flex-end;
+			width: 70px;
+			height: 31px;
+
+			border-radius: 30px;
+			background: $Accent01;
+			box-shadow: $Button_Shadow;
+			border: $Button_Border;
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			transition: $transition;
+
+			.Next-icon {
+				display: flex;
+				flex-direction: row-reverse;
+				align-items: center;
+				gap: 4px;
+
+				transition: transform $transition;
+
+				svg {
+					width: 20px;
+					height: 20px;
+					transform: rotate(0deg);
+					transition: transform $transition;
+				}
+
+				h6 {
+					color: $Main;
+					text-align: center;
+					font-size: 0.875rem;
+					font-weight: 700;
+					white-space: nowrap;
+				}
+			}
+		}
+
+		.buttonPrev,
+		.buttonNext {
+			border-radius: 10px;
+			&:hover {
+				transform: scale(1.05);
+
+				cursor: pointer;
+				// svg {
+				// 	transform: rotate(360deg);
+				// }
+			}
+			&:active {
+				transform: scale(0.9);
+				// svg {
+				// 	transform: rotate(180deg);
+				// }
+			}
+		}
+
 		.Buttons {
 			align-self: flex-end;
 			display: flex;
 			column-gap: 6px;
-			.buttonPrev {
-				width: 105px;
-				height: 31px;
-	
-				border-radius: 30px;
-				background: $Accent01;
-				box-shadow: $Button_Shadow;
-				border: $Button_Border;
-	
-				display: flex;
-				align-items: center;
-				justify-content: center;
-	
-				transition: $transition;
-	
-				.Prev-icon {
-					display: flex;
-					align-items: center;
-					gap: 4px;
-	
-					transition: transform $transition;
-	
-					svg {
-						width: 20px;
-						height: 20px;
-						transform: rotate(0deg);
-						transition: transform $transition;
-					}
-	
-					h6 {
-						color: $Main;
-						text-align: center;
-						font-size: 0.875rem;
-						font-weight: 700;
-						white-space: nowrap;
-					}
-				}
-				&:hover {
-					transform: scale(1.05);
-	
-					cursor: pointer;
-					svg {
-						transform: rotate(360deg);
-					}
-				}
-				&:active {
-					transform: scale(0.9);
-					svg {
-						transform: rotate(180deg);
-					}
-				}
-			}
-	
-			.buttonNext {
-				width: 70px;
-				height: 31px;
-	
-				border-radius: 30px;
-				background: $Accent01;
-				box-shadow: $Button_Shadow;
-				border: $Button_Border;
-	
-				display: flex;
-				align-items: center;
-				justify-content: center;
-	
-				transition: $transition;
-	
-				.Next-icon {
-					display: flex;
-					flex-direction: row-reverse;
-					align-items: center;
-					gap: 4px;
-	
-					transition: transform $transition;
-	
-					svg {
-						width: 20px;
-						height: 20px;
-						transform: rotate(0deg);
-						transition: transform $transition;
-					}
-	
-					h6 {
-						color: $Main;
-						text-align: center;
-						font-size: 0.875rem;
-						font-weight: 700;
-						white-space: nowrap;
-					}
-				}
-				&:hover {
-					transform: scale(1.05);
-	
-					cursor: pointer;
-					svg {
-						transform: rotate(360deg);
-					}
-				}
-				&:active {
-					transform: scale(0.9);
-					svg {
-						transform: rotate(180deg);
-					}
-				}
-			}
 		}
 
 		.BGLayer {

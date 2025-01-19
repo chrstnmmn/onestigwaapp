@@ -113,12 +113,7 @@ body .Tutorial-Wrapper .Sixth-Layer .resultWrapper .buttonREMOVE {
   flex-direction: column;
   align-items: flex-end;
 }
-body .Tutorial-Wrapper .Buttons {
-  align-self: flex-end;
-  display: flex;
-  column-gap: 6px;
-}
-body .Tutorial-Wrapper .Buttons .buttonPrev {
+body .Tutorial-Wrapper .buttonPrev {
   width: 105px;
   height: 31px;
   border-radius: 30px;
@@ -130,39 +125,27 @@ body .Tutorial-Wrapper .Buttons .buttonPrev {
   justify-content: center;
   transition: 0.1s cubic-bezier(0.4, 0.01, 0.04, 0.88);
 }
-body .Tutorial-Wrapper .Buttons .buttonPrev .Prev-icon {
+body .Tutorial-Wrapper .buttonPrev .Prev-icon {
   display: flex;
   align-items: center;
   gap: 4px;
   transition: transform 0.1s cubic-bezier(0.4, 0.01, 0.04, 0.88);
 }
-body .Tutorial-Wrapper .Buttons .buttonPrev .Prev-icon svg {
-  width: 20px;
-  height: 20px;
+body .Tutorial-Wrapper .buttonPrev .Prev-icon svg {
+  width: 17px;
+  height: 17px;
   transform: rotate(0deg);
   transition: transform 0.1s cubic-bezier(0.4, 0.01, 0.04, 0.88);
 }
-body .Tutorial-Wrapper .Buttons .buttonPrev .Prev-icon h6 {
+body .Tutorial-Wrapper .buttonPrev .Prev-icon h6 {
   color: #ffffff;
   text-align: center;
   font-size: 0.875rem;
   font-weight: 700;
   white-space: nowrap;
 }
-body .Tutorial-Wrapper .Buttons .buttonPrev:hover {
-  transform: scale(1.05);
-  cursor: pointer;
-}
-body .Tutorial-Wrapper .Buttons .buttonPrev:hover svg {
-  transform: rotate(360deg);
-}
-body .Tutorial-Wrapper .Buttons .buttonPrev:active {
-  transform: scale(0.9);
-}
-body .Tutorial-Wrapper .Buttons .buttonPrev:active svg {
-  transform: rotate(180deg);
-}
-body .Tutorial-Wrapper .Buttons .buttonNext {
+body .Tutorial-Wrapper .buttonNext {
+  align-self: flex-end;
   width: 70px;
   height: 31px;
   border-radius: 30px;
@@ -174,38 +157,43 @@ body .Tutorial-Wrapper .Buttons .buttonNext {
   justify-content: center;
   transition: 0.1s cubic-bezier(0.4, 0.01, 0.04, 0.88);
 }
-body .Tutorial-Wrapper .Buttons .buttonNext .Next-icon {
+body .Tutorial-Wrapper .buttonNext .Next-icon {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
   gap: 4px;
   transition: transform 0.1s cubic-bezier(0.4, 0.01, 0.04, 0.88);
 }
-body .Tutorial-Wrapper .Buttons .buttonNext .Next-icon svg {
+body .Tutorial-Wrapper .buttonNext .Next-icon svg {
   width: 20px;
   height: 20px;
   transform: rotate(0deg);
   transition: transform 0.1s cubic-bezier(0.4, 0.01, 0.04, 0.88);
 }
-body .Tutorial-Wrapper .Buttons .buttonNext .Next-icon h6 {
+body .Tutorial-Wrapper .buttonNext .Next-icon h6 {
   color: #ffffff;
   text-align: center;
   font-size: 0.875rem;
   font-weight: 700;
   white-space: nowrap;
 }
-body .Tutorial-Wrapper .Buttons .buttonNext:hover {
+body .Tutorial-Wrapper .buttonPrev,
+body .Tutorial-Wrapper .buttonNext {
+  border-radius: 10px;
+}
+body .Tutorial-Wrapper .buttonPrev:hover,
+body .Tutorial-Wrapper .buttonNext:hover {
   transform: scale(1.05);
   cursor: pointer;
 }
-body .Tutorial-Wrapper .Buttons .buttonNext:hover svg {
-  transform: rotate(360deg);
-}
-body .Tutorial-Wrapper .Buttons .buttonNext:active {
+body .Tutorial-Wrapper .buttonPrev:active,
+body .Tutorial-Wrapper .buttonNext:active {
   transform: scale(0.9);
 }
-body .Tutorial-Wrapper .Buttons .buttonNext:active svg {
-  transform: rotate(180deg);
+body .Tutorial-Wrapper .Buttons {
+  align-self: flex-end;
+  display: flex;
+  column-gap: 6px;
 }
 body .Tutorial-Wrapper .BGLayer {
   grid-area: 1/1;

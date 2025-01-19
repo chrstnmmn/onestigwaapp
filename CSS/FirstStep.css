@@ -98,52 +98,6 @@ button {
   font-weight: 700;
   padding: 7px 14px;
 }
-.First-Step .buttonNext {
-  align-self: flex-end;
-  width: 70px;
-  height: 31px;
-  border-radius: 30px;
-  background: #e7c01d;
-  box-shadow: 0px 4px 0px 0px rgba(231, 192, 29, 0.5);
-  border: 3px solid #F3DF8E;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.1s cubic-bezier(0.4, 0.01, 0.04, 0.88);
-}
-.First-Step .buttonNext .Next-icon {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  gap: 4px;
-  transition: transform 0.1s cubic-bezier(0.4, 0.01, 0.04, 0.88);
-}
-.First-Step .buttonNext .Next-icon svg {
-  width: 20px;
-  height: 20px;
-  transform: rotate(0deg);
-  transition: transform 0.1s cubic-bezier(0.4, 0.01, 0.04, 0.88);
-}
-.First-Step .buttonNext .Next-icon h6 {
-  color: #ffffff;
-  text-align: center;
-  font-size: 0.875rem;
-  font-weight: 700;
-  white-space: nowrap;
-}
-.First-Step .buttonNext:hover {
-  transform: scale(1.05);
-  cursor: pointer;
-}
-.First-Step .buttonNext:hover svg {
-  transform: rotate(360deg);
-}
-.First-Step .buttonNext:active {
-  transform: scale(0.9);
-}
-.First-Step .buttonNext:active svg {
-  transform: rotate(180deg);
-}
 
 @media screen and (width < 700px) {
   .First-Step {
@@ -153,12 +107,6 @@ button {
     width: 250px;
     font-size: 0.625rem;
     padding: 4px 10px;
-  }
-  .First-Step .buttonNext {
-    width: 60px;
-  }
-  .First-Step .buttonNext .Next-icon svg {
-    display: none;
   }
 }
 

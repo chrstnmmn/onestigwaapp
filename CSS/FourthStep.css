@@ -98,100 +98,6 @@ button {
   font-weight: 700;
   padding: 7px 14px;
 }
-.Fourth-Step .Buttons {
-  align-self: flex-end;
-  display: flex;
-  column-gap: 6px;
-}
-.Fourth-Step .Buttons .buttonPrev {
-  width: 105px;
-  height: 31px;
-  border-radius: 30px;
-  background: #e7c01d;
-  box-shadow: 0px 4px 0px 0px rgba(231, 192, 29, 0.5);
-  border: 3px solid #F3DF8E;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.1s cubic-bezier(0.4, 0.01, 0.04, 0.88);
-}
-.Fourth-Step .Buttons .buttonPrev .Prev-icon {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  transition: transform 0.1s cubic-bezier(0.4, 0.01, 0.04, 0.88);
-}
-.Fourth-Step .Buttons .buttonPrev .Prev-icon svg {
-  width: 20px;
-  height: 20px;
-  transform: rotate(0deg);
-  transition: transform 0.1s cubic-bezier(0.4, 0.01, 0.04, 0.88);
-}
-.Fourth-Step .Buttons .buttonPrev .Prev-icon h6 {
-  color: #ffffff;
-  text-align: center;
-  font-size: 0.875rem;
-  font-weight: 700;
-  white-space: nowrap;
-}
-.Fourth-Step .Buttons .buttonPrev:hover {
-  transform: scale(1.05);
-  cursor: pointer;
-}
-.Fourth-Step .Buttons .buttonPrev:hover svg {
-  transform: rotate(360deg);
-}
-.Fourth-Step .Buttons .buttonPrev:active {
-  transform: scale(0.9);
-}
-.Fourth-Step .Buttons .buttonPrev:active svg {
-  transform: rotate(180deg);
-}
-.Fourth-Step .Buttons .buttonNext {
-  width: 70px;
-  height: 31px;
-  border-radius: 30px;
-  background: #e7c01d;
-  box-shadow: 0px 4px 0px 0px rgba(231, 192, 29, 0.5);
-  border: 3px solid #F3DF8E;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.1s cubic-bezier(0.4, 0.01, 0.04, 0.88);
-}
-.Fourth-Step .Buttons .buttonNext .Next-icon {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  gap: 4px;
-  transition: transform 0.1s cubic-bezier(0.4, 0.01, 0.04, 0.88);
-}
-.Fourth-Step .Buttons .buttonNext .Next-icon svg {
-  width: 20px;
-  height: 20px;
-  transform: rotate(0deg);
-  transition: transform 0.1s cubic-bezier(0.4, 0.01, 0.04, 0.88);
-}
-.Fourth-Step .Buttons .buttonNext .Next-icon h6 {
-  color: #ffffff;
-  text-align: center;
-  font-size: 0.875rem;
-  font-weight: 700;
-  white-space: nowrap;
-}
-.Fourth-Step .Buttons .buttonNext:hover {
-  transform: scale(1.05);
-  cursor: pointer;
-}
-.Fourth-Step .Buttons .buttonNext:hover svg {
-  transform: rotate(360deg);
-}
-.Fourth-Step .Buttons .buttonNext:active {
-  transform: scale(0.9);
-}
-.Fourth-Step .Buttons .buttonNext:active svg {
-  transform: rotate(180deg);
-}
 
 @media screen and (width < 700px) {
   .Fourth-Step {
@@ -201,18 +107,6 @@ button {
     width: 230px;
     font-size: 0.625rem;
     padding: 4px 10px;
-  }
-  .Fourth-Step .Buttons .buttonPrev {
-    width: 90px;
-  }
-  .Fourth-Step .Buttons .buttonPrev .Prev-icon svg {
-    display: none;
-  }
-  .Fourth-Step .Buttons .buttonNext {
-    width: 60px;
-  }
-  .Fourth-Step .Buttons .buttonNext .Next-icon svg {
-    display: none;
   }
 }
 
