@@ -5,7 +5,7 @@ body {
 	background-color: $TextBox;
 	font-family: $Inter;
 	display: grid;
-	grid-template-rows: 80px 1fr 1fr;
+	grid-template-rows: 80px 1fr 60px;
 	grid-template-areas:
 		"Header"
 		"Content"
@@ -30,26 +30,21 @@ body {
 
 	footer {
 		grid-area: Footer;
-		padding-block: 1em;
+
+		display: grid;
+		align-items: center;
+		justify-content: center;
 	}
 }
 
 @media screen and (width < 1000px) {
   body {
     grid-template-rows: 70px 1fr 40px;
-
-		footer {
-			padding-block: 0.65em;
-		};
   }
 }
 
 @media screen and (width < 700px) {
   body {
     grid-template-rows: 40px 1fr 30px;
-
-		footer {
-			padding-block: 0.5em;
-		}
   }
 }

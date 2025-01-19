@@ -116,15 +116,16 @@ button {
 }
 @media screen and (width < 700px) {
   .Sixth-Step {
-    transform: translate(60px, 375px);
+    transform: translate(10px, 375px);
   }
   .Sixth-Step .paragraphOne {
-    width: 230px;
-    font-size: 0.625rem;
+    width: 280px;
+    font-size: 0.5rem;
     padding: 4px 10px;
   }
   .Sixth-Step .paragraphTwo {
-    width: 200px;
+    font-size: 0.4rem;
+    width: 250px;
   }
 }
 
