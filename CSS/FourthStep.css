@@ -1,0 +1,219 @@
+/*CSS RESET*/
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+button {
+  border-style: none;
+}
+
+input,
+button {
+  border-style: none;
+  outline-color: #0b5793;
+}
+
+.Fourth-Step {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 4px;
+  transform: translate(55px, 150px);
+}
+.Fourth-Step p {
+  width: 400px;
+  border-radius: 10px;
+  border: 3px solid rgba(144, 144, 144, 0.25);
+  background: #ffffff;
+  box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.1);
+  color: #0b5793;
+  font-size: 0.875rem;
+  font-weight: 700;
+  padding: 7px 14px;
+}
+.Fourth-Step .Buttons {
+  align-self: flex-end;
+  display: flex;
+  column-gap: 6px;
+}
+.Fourth-Step .Buttons .buttonPrev {
+  width: 105px;
+  height: 31px;
+  border-radius: 30px;
+  background: #e7c01d;
+  box-shadow: 0px 4px 0px 0px rgba(231, 192, 29, 0.5);
+  border: 3px solid #F3DF8E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.1s cubic-bezier(0.4, 0.01, 0.04, 0.88);
+}
+.Fourth-Step .Buttons .buttonPrev .Prev-icon {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: transform 0.1s cubic-bezier(0.4, 0.01, 0.04, 0.88);
+}
+.Fourth-Step .Buttons .buttonPrev .Prev-icon svg {
+  width: 20px;
+  height: 20px;
+  transform: rotate(0deg);
+  transition: transform 0.1s cubic-bezier(0.4, 0.01, 0.04, 0.88);
+}
+.Fourth-Step .Buttons .buttonPrev .Prev-icon h6 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.Fourth-Step .Buttons .buttonPrev:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.Fourth-Step .Buttons .buttonPrev:hover svg {
+  transform: rotate(360deg);
+}
+.Fourth-Step .Buttons .buttonPrev:active {
+  transform: scale(0.9);
+}
+.Fourth-Step .Buttons .buttonPrev:active svg {
+  transform: rotate(180deg);
+}
+.Fourth-Step .Buttons .buttonNext {
+  width: 70px;
+  height: 31px;
+  border-radius: 30px;
+  background: #e7c01d;
+  box-shadow: 0px 4px 0px 0px rgba(231, 192, 29, 0.5);
+  border: 3px solid #F3DF8E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.1s cubic-bezier(0.4, 0.01, 0.04, 0.88);
+}
+.Fourth-Step .Buttons .buttonNext .Next-icon {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 4px;
+  transition: transform 0.1s cubic-bezier(0.4, 0.01, 0.04, 0.88);
+}
+.Fourth-Step .Buttons .buttonNext .Next-icon svg {
+  width: 20px;
+  height: 20px;
+  transform: rotate(0deg);
+  transition: transform 0.1s cubic-bezier(0.4, 0.01, 0.04, 0.88);
+}
+.Fourth-Step .Buttons .buttonNext .Next-icon h6 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.Fourth-Step .Buttons .buttonNext:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.Fourth-Step .Buttons .buttonNext:hover svg {
+  transform: rotate(360deg);
+}
+.Fourth-Step .Buttons .buttonNext:active {
+  transform: scale(0.9);
+}
+.Fourth-Step .Buttons .buttonNext:active svg {
+  transform: rotate(180deg);
+}
+
+@media screen and (width < 700px) {
+  .Second-Step {
+    transform: translate(85px, 90px);
+  }
+  .Second-Step p {
+    width: 230px;
+    font-size: 0.625rem;
+    padding: 4px 10px;
+  }
+  .Second-Step .Buttons .buttonPrev {
+    width: 90px;
+  }
+  .Second-Step .Buttons .buttonPrev .Prev-icon svg {
+    display: none;
+  }
+  .Second-Step .Buttons .buttonNext {
+    width: 60px;
+  }
+  .Second-Step .Buttons .buttonNext .Next-icon svg {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=FourthStep.css.map */
