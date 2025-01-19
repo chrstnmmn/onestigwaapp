@@ -89,15 +89,18 @@ body .Tutorial-Wrapper {
 }
 body .Tutorial-Wrapper .First-Layer-First,
 body .Tutorial-Wrapper .First-Layer-Second,
+body .Tutorial-Wrapper .First-Layer-Third,
 body .Tutorial-Wrapper .Second-Layer,
 body .Tutorial-Wrapper .Third-Layer,
 body .Tutorial-Wrapper .Fourth-Layer,
 body .Tutorial-Wrapper .Fifth-Layer,
-body .Tutorial-Wrapper .Sixth-Layer {
+body .Tutorial-Wrapper .Sixth-Layer,
+body .Tutorial-Wrapper .Seventh-Layer {
   grid-area: 1/1;
 }
 body .Tutorial-Wrapper .First-Layer-First,
-body .Tutorial-Wrapper .First-Layer-Second {
+body .Tutorial-Wrapper .First-Layer-Second,
+body .Tutorial-Wrapper .First-Layer-Third {
   pointer-events: none;
   user-select: none;
 }

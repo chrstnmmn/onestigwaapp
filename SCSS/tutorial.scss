@@ -14,16 +14,19 @@ body {
 
 		.First-Layer-First,
 		.First-Layer-Second,
+		.First-Layer-Third,
 		.Second-Layer,
 		.Third-Layer,
 		.Fourth-Layer,
 		.Fifth-Layer,
-		.Sixth-Layer {
+		.Sixth-Layer,
+		.Seventh-Layer {
 			grid-area: 1/1;
 		}
 
 		.First-Layer-First,
-		.First-Layer-Second {
+		.First-Layer-Second,
+		.First-Layer-Third {
 			pointer-events: none;
 			user-select: none;
 		}
@@ -90,7 +93,6 @@ body {
 		}
 
 		.buttonNext {
-
 			align-self: flex-end;
 			width: 70px;
 			height: 31px;
@@ -163,7 +165,7 @@ body {
 
 		::placeholder {
 			color: $Accent02;
-			font-size: 1rem; 
+			font-size: 1rem;
 		}
 	}
 }
@@ -194,9 +196,9 @@ body {
 			.buttonNext {
 				border-radius: 10px;
 			}
-			
+
 			::placeholder {
-				font-size: .75rem;
+				font-size: 0.75rem;
 			}
 		}
 	}

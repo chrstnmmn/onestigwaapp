@@ -57,6 +57,7 @@ function GetAllElement() {
 		document.querySelector(".Fourth-Layer"),
 		document.querySelector(".Fifth-Layer"),
 		document.querySelector(".Sixth-Layer"),
+		document.querySelector(".Seventh-Layer"),
 	];
 
 	// then pushing each step inside of another array for accessing the DOM attributes
@@ -76,6 +77,7 @@ function GetAllElement() {
 function SelectDOMLayers(layersCount) {
 	const FirstLayerFirst = document.querySelector(".First-Layer-First");
 	const FirstLayerSecond = document.querySelector(".First-Layer-Second");
+	const FirstLayerThird = document.querySelector(".First-Layer-Third");
 
 	// default display of the layers
 	FirstLayerFirst.style.display = elementDisplay.showElement;
@@ -84,9 +86,15 @@ function SelectDOMLayers(layersCount) {
 	if (layersCount >= 0 && layersCount <= 2) {
 		FirstLayerFirst.style.display = elementDisplay.showElement;
 		FirstLayerSecond.style.display = elementDisplay.hideElement;
+		FirstLayerThird.style.display = elementDisplay.hideElement;
 	} else if (layersCount >= 3 && layersCount <= 4) {
 		FirstLayerFirst.style.display = elementDisplay.hideElement;
 		FirstLayerSecond.style.display = elementDisplay.showElement;
+		FirstLayerThird.style.display = elementDisplay.hideElement;
+	} else if (layersCount === 5) {
+		FirstLayerFirst.style.display = elementDisplay.hideElement
+		FirstLayerSecond.style.display = elementDisplay.hideElement;
+		FirstLayerThird.style.display = elementDisplay.showElement;
 	}
 }
 
