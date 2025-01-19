@@ -1,0 +1,39 @@
+@import "style.scss";
+
+.Fifth-Step {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 4px;
+
+  transform: translate(0px, 40px);
+  p {
+    width: 400px;
+
+    border-radius: $Radius;
+    border: $Box_Border;
+    background: $Main;
+    box-shadow: $Box_Shadow;
+    color: $Accent02;
+
+    font-size: 0.875rem;
+    font-weight: 700;
+
+    padding: 7px 14px;
+  }
+}
+
+@media screen and (width < 700px) {
+  .Fifth-Step {
+    transform: translate(0px, 45px);
+
+    p {
+      width: 280px;
+
+      font-size: 0.625rem;
+      padding: 4px 10px;
+    }
+    
+  }
+}

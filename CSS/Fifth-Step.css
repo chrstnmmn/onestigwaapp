@@ -1,0 +1,113 @@
+/*CSS RESET*/
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+button {
+  border-style: none;
+}
+
+input,
+button {
+  border-style: none;
+  outline-color: #0b5793;
+}
+
+.Fifth-Step {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 4px;
+  transform: translate(0px, 40px);
+}
+.Fifth-Step p {
+  width: 400px;
+  border-radius: 10px;
+  border: 3px solid rgba(144, 144, 144, 0.25);
+  background: #ffffff;
+  box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.1);
+  color: #0b5793;
+  font-size: 0.875rem;
+  font-weight: 700;
+  padding: 7px 14px;
+}
+
+@media screen and (width < 700px) {
+  .Fifth-Step {
+    transform: translate(0px, 45px);
+  }
+  .Fifth-Step p {
+    width: 280px;
+    font-size: 0.625rem;
+    padding: 4px 10px;
+  }
+}
+
+/*# sourceMappingURL=Fifth-Step.css.map */
