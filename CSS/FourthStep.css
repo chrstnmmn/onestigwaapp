@@ -194,24 +194,24 @@ button {
 }
 
 @media screen and (width < 700px) {
-  .Second-Step {
-    transform: translate(85px, 90px);
+  .Fourth-Step {
+    transform: translate(34px, 125px);
   }
-  .Second-Step p {
+  .Fourth-Step p {
     width: 230px;
     font-size: 0.625rem;
     padding: 4px 10px;
   }
-  .Second-Step .Buttons .buttonPrev {
+  .Fourth-Step .Buttons .buttonPrev {
     width: 90px;
   }
-  .Second-Step .Buttons .buttonPrev .Prev-icon svg {
+  .Fourth-Step .Buttons .buttonPrev .Prev-icon svg {
     display: none;
   }
-  .Second-Step .Buttons .buttonNext {
+  .Fourth-Step .Buttons .buttonNext {
     width: 60px;
   }
-  .Second-Step .Buttons .buttonNext .Next-icon svg {
+  .Fourth-Step .Buttons .buttonNext .Next-icon svg {
     display: none;
   }
 }
