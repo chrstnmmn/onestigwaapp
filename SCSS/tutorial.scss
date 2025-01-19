@@ -133,7 +133,6 @@ body {
 
 		.buttonPrev,
 		.buttonNext {
-			border-radius: 10px;
 			&:hover {
 				transform: scale(1.05);
 
@@ -189,6 +188,11 @@ body {
 						}
 					}
 				}
+			}
+
+			.buttonPrev,
+			.buttonNext {
+				border-radius: 10px;
 			}
 			
 			::placeholder {

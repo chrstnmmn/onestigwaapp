@@ -177,10 +177,6 @@ body .Tutorial-Wrapper .buttonNext .Next-icon h6 {
   font-weight: 700;
   white-space: nowrap;
 }
-body .Tutorial-Wrapper .buttonPrev,
-body .Tutorial-Wrapper .buttonNext {
-  border-radius: 10px;
-}
 body .Tutorial-Wrapper .buttonPrev:hover,
 body .Tutorial-Wrapper .buttonNext:hover {
   transform: scale(1.05);
@@ -217,6 +213,10 @@ body .Tutorial-Wrapper ::placeholder {
   }
   body .Tutorial-Wrapper .Buttons .buttonNext .Next-icon svg {
     display: none;
+  }
+  body .Tutorial-Wrapper .buttonPrev,
+  body .Tutorial-Wrapper .buttonNext {
+    border-radius: 10px;
   }
   body .Tutorial-Wrapper ::placeholder {
     font-size: 0.75rem;
