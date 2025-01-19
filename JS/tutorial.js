@@ -8,7 +8,7 @@ window.onload = () => {
 const elementDisplay = {
 	showElement: "block",
 	hideElement: "none",
-}
+};
 
 // the function where in which step should be shown first when the page is loaded
 function ShowDOM() {
@@ -56,6 +56,7 @@ function GetAllElement() {
 		document.querySelector(".Third-Layer"),
 		document.querySelector(".Fourth-Layer"),
 		document.querySelector(".Fifth-Layer"),
+		document.querySelector(".Sixth-Layer"),
 	];
 
 	// then pushing each step inside of another array for accessing the DOM attributes
@@ -76,23 +77,20 @@ function SelectDOMLayers(layersCount) {
 	const FirstLayerFirst = document.querySelector(".First-Layer-First");
 	const FirstLayerSecond = document.querySelector(".First-Layer-Second");
 
+	// default display of the layers
+	FirstLayerFirst.style.display = elementDisplay.showElement;
+
 	// checking which DOM layers should appear on the page based on the countings
-	switch (layersCount) {
-		case 0:
-			FirstLayerFirst.style.display = elementDisplay.showElement;
-			FirstLayerSecond.style.display = elementDisplay.hideElement;
-			break;
-		case 3:
-			FirstLayerFirst.style.display = elementDisplay.hideElement;
-			FirstLayerSecond.style.display = elementDisplay.showElement;
-			break;
-		default:
-			console.log("No more layers to show");
-			break;
+	if (layersCount >= 0 && layersCount <= 2) {
+		FirstLayerFirst.style.display = elementDisplay.showElement;
+		FirstLayerSecond.style.display = elementDisplay.hideElement;
+	} else if (layersCount >= 3 && layersCount <= 4) {
+		FirstLayerFirst.style.display = elementDisplay.hideElement;
+		FirstLayerSecond.style.display = elementDisplay.showElement;
 	}
 }
 
-// here in this function it basically check if the element that is currently selected matches the index inside the 
+// here in this function it basically check if the element that is currently selected matches the index inside the
 // domeElements array, if it matches the DOM element correspond with its index will be shown in the page,
 // while the rest are hidden behind.
 function SelectDomElement(domIndex) {
@@ -100,6 +98,9 @@ function SelectDomElement(domIndex) {
 	console.log("Item selected: ", domElements[domIndex]);
 
 	domElements.forEach((elements, index) => {
-		elements.style.display = index === domIndex ? elementDisplay.showElement : elementDisplay.hideElement;
+		elements.style.display =
+			index === domIndex
+				? elementDisplay.showElement
+				: elementDisplay.hideElement;
 	});
 }
