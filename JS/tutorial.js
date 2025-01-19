@@ -92,7 +92,7 @@ function SelectDOMLayers(layersCount) {
 		FirstLayerSecond.style.display = elementDisplay.showElement;
 		FirstLayerThird.style.display = elementDisplay.hideElement;
 	} else if (layersCount === 5) {
-		FirstLayerFirst.style.display = elementDisplay.hideElement
+		FirstLayerFirst.style.display = elementDisplay.hideElement;
 		FirstLayerSecond.style.display = elementDisplay.hideElement;
 		FirstLayerThird.style.display = elementDisplay.showElement;
 	}

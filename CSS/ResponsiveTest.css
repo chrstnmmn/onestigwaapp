@@ -164,7 +164,7 @@ body {
   background-color: #ededed;
   font-family: "Inter", serif;
   display: grid;
-  grid-template-rows: 80px 1fr 50px;
+  grid-template-rows: 80px 1fr 1fr;
   grid-template-areas: "Header" "Content" "Footer";
   height: 100vh;
 }
@@ -182,19 +182,23 @@ body .contentWrapper {
 }
 body footer {
   grid-area: Footer;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding-block: 1em;
 }
 
 @media screen and (width < 1000px) {
   body {
     grid-template-rows: 70px 1fr 40px;
   }
+  body footer {
+    padding-block: 0.65em;
+  }
 }
 @media screen and (width < 700px) {
   body {
     grid-template-rows: 40px 1fr 30px;
+  }
+  body footer {
+    padding-block: 0.5em;
   }
 }
 body {
