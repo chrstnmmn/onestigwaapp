@@ -80,19 +80,19 @@ button {
 }
 
 header {
-  flex-shrink: 0;
-  position: sticky;
+  width: 100%;
+  position: fixed;
   z-index: 100;
-  top: 0;
   /* Style */
   background: #0b5793;
-  border-top: 8px solid #e7c01d;
 }
 header .container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  justify-content: center;
+  column-gap: 30vw;
   padding-block: 0.75rem;
 }
 header .container .button_links {
@@ -115,9 +115,6 @@ header .container a {
 }
 
 @media screen and (width < 1000px) {
-  header {
-    border-top: 8px solid #e7c01d;
-  }
   header .container .logo {
     max-width: 8rem;
   }
@@ -127,10 +124,12 @@ header .container a {
 }
 @media screen and (width < 700px) {
   header {
-    border-top: 25px solid #0b5793;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: env(safe-area-inset-top, 0);
     background: #0b5793;
     align-items: center;
-    padding-block: 4px;
     gap: 12px;
   }
   header .container .button_links {

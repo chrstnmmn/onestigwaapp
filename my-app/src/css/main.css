@@ -113,7 +113,7 @@ body footer {
 }
 @media screen and (width < 700px) {
   body {
-    grid-template-rows: 70px 1fr 30px;
+    grid-template-rows: 50px 1fr 30px;
   }
   body footer {
     visibility: hidden;
