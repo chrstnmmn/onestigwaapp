@@ -1,0 +1,10 @@
+{
+  "appId": "com.example.app",
+  "appName": "onestigwaapp",
+  "webDir": "src",
+  "plugins": {
+    "SplashScreen": {
+      "launchAutoHide": true
+    }
+  }
+}
