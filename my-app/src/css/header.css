@@ -84,25 +84,28 @@ header {
   position: sticky;
   z-index: 100;
   top: 0;
+  /* Style */
+  background: #0b5793;
+  border-top: 8px solid #e7c01d;
+}
+header .container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  /* Style */
-  background: #0b5793;
-  border-top: 10px solid #e7c01d;
+  padding-block: 0.75rem;
 }
-header .button_links {
+header .container .button_links {
   display: flex;
   flex-direction: row;
   justify-content: end;
   align-items: center;
   gap: 43px;
 }
-header .logo {
+header .container .logo {
   max-width: 12rem;
 }
-header a {
+header .container a {
   color: #ffffff;
   font-style: normal;
   font-size: 1.25rem;
@@ -115,44 +118,33 @@ header a {
   header {
     border-top: 8px solid #e7c01d;
   }
-  header .logo {
+  header .container .logo {
     max-width: 8rem;
   }
-  header a {
+  header .container a {
     padding-block: 0.8em;
   }
 }
 @media screen and (width < 700px) {
   header {
-    border-top: 6px solid #e7c01d;
+    border-top: 25px solid #0b5793;
     background: #0b5793;
     align-items: center;
-    padding-block: 8px;
+    padding-block: 4px;
     gap: 12px;
   }
-  header .button_links {
+  header .container .button_links {
     gap: 15px;
   }
-  header .button_links a {
+  header .container .button_links a {
     font-size: 0.625rem;
     font-weight: 600;
     padding-block: 0.6em;
   }
-  header .logo {
+  header .container .logo {
     align-self: center;
     justify-self: center;
     max-width: 6rem;
-  }
-}
-@media screen and (width < 330px) {
-  header {
-    justify-content: center;
-  }
-  header .button_links {
-    display: none;
-  }
-  header .logo {
-    max-width: 5rem;
   }
 }
 

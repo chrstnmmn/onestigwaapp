@@ -1,94 +1,88 @@
 @import "style.scss";
 
 header {
-	// height: 80px;
-	flex-shrink: 0;
-	position: sticky;
-	z-index: 100;
-	top: 0;
+  // height: 80px;
+  flex-shrink: 0;
+  position: sticky;
+  z-index: 100;
+  top: 0;
 
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
+  /* Style */
+  background: $Accent02;
+  border-top: 8px solid $Accent01;
 
-	/* Style */
-	background: $Accent02;
-	border-top: 10px solid $Accent01;
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 
-	.button_links {
-		display: flex;
-		flex-direction: row;
-		justify-content: end;
-		align-items: center;
-		gap: 43px;
-	}
+		padding-block: .75rem;
 
-	.logo {
-		max-width: 12rem;
-	}
+    .button_links {
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+      align-items: center;
+      gap: 43px;
+    }
 
-	a {
-		color: $Main;
-		font-style: normal;
-		font-size: 1.25rem;
-		font-weight: 700;
-		line-height: normal;
-		text-decoration: none;
-	}
+    .logo {
+      max-width: 12rem;
+    }
+
+    a {
+      color: $Main;
+      font-style: normal;
+      font-size: 1.25rem;
+      font-weight: 700;
+      line-height: normal;
+      text-decoration: none;
+    }
+  }
 }
 @media screen and (width < 1000px) {
-	header {
-		// height: 70px;
-		border-top: 8px solid $Accent01;
+  header {
+    // height: 70px;
+    border-top: 8px solid $Accent01;
 
-		.logo {
-			max-width: 8rem;
-		}
-		a {
-			padding-block: .8em;
-		}
-	}
+    .container {
+      .logo {
+        max-width: 8rem;
+      }
+      a {
+        padding-block: 0.8em;
+      }
+    }
+  }
 }
 
 @media screen and (width < 700px) {
-	header {
-		// height: 40px;
-		border-top: 6px solid $Accent01;
-		background: $Accent02;
+  header {
+    // height: 40px;
+    border-top:25px solid $Accent02;
+    background: $Accent02;
 
-		align-items: center;
-		padding-block: 8px;
-		gap: 12px;
+    align-items: center;
+    padding-block: 4px;
+    gap: 12px;
 
-		.button_links {
-			gap: 15px;
+    .container {
+      .button_links {
+        gap: 15px;
 
-			a {
-				font-size: 0.625rem;
-				font-weight: 600;
-				padding-block: .6em;
-			}
-		}
+        a {
+          font-size: 0.625rem;
+          font-weight: 600;
+          padding-block: 0.6em;
+        }
+      }
 
-		.logo {
-			align-self: center;
-			justify-self: center;
-			max-width: 6rem;
-		}
-	}
-}
-
-@media screen and (width < 330px) {
-	header {
-
-		justify-content: center;
-		.button_links {
-			display: none;
-		}
-
-		.logo {
-			max-width: 5rem;
-		}
-	}
+      .logo {
+        align-self: center;
+        justify-self: center;
+        max-width: 6rem;
+      }
+    }
+  }
 }
