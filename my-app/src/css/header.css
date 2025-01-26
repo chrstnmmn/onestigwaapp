@@ -85,6 +85,8 @@ header {
   z-index: 100;
   /* Style */
   background: #0b5793;
+  border-bottom: 0.5rem solid #e7c01d;
+  padding-block: 1rem;
 }
 header .container {
   display: flex;
@@ -93,7 +95,6 @@ header .container {
   align-items: center;
   justify-content: center;
   column-gap: 30vw;
-  padding-block: 0.75rem;
 }
 header .container .button_links {
   display: flex;
@@ -115,6 +116,10 @@ header .container a {
 }
 
 @media screen and (width < 1000px) {
+  header {
+    padding-block: 0rem;
+    border-bottom: 0.3rem solid #e7c01d;
+  }
   header .container .logo {
     max-width: 8rem;
   }
@@ -128,6 +133,7 @@ header .container a {
     left: 0;
     right: 0;
     padding-top: env(safe-area-inset-top, 0);
+    padding-bottom: 1rem;
     background: #0b5793;
     align-items: center;
     gap: 12px;

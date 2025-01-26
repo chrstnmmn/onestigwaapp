@@ -8,6 +8,9 @@ header {
 
 	/* Style */
 	background: $Accent02;
+	border-bottom: .5rem solid $Accent01;
+
+	padding-block: 1rem;
 
 
 	.container {
@@ -17,8 +20,6 @@ header {
 		align-items: center;
 		justify-content: center;
     column-gap: 30vw;
-
-		padding-block: 0.75rem;
 
 		.button_links {
 			display: flex;
@@ -45,8 +46,8 @@ header {
 @media screen and (width < 1000px) {
 	header {
 		// height: 70px;
-
-
+		padding-block: 0rem;
+		border-bottom: .3rem solid $Accent01;
 		.container {
 			.logo {
 				max-width: 8rem;
@@ -64,6 +65,7 @@ header {
 		left: 0;
 		right: 0;
 		padding-top: env(safe-area-inset-top, 0);
+		padding-bottom: 1rem;
 		background: $Accent02;
 
 		align-items: center;

@@ -182,6 +182,7 @@ body .contentWrapper {
 }
 body footer {
   grid-area: Footer;
+  visibility: hidden;
   display: grid;
   align-items: center;
   justify-content: center;
@@ -189,15 +190,12 @@ body footer {
 
 @media screen and (width < 1000px) {
   body {
-    grid-template-rows: 70px 1fr 40px;
+    grid-template-rows: 60px 1fr 40px;
   }
 }
 @media screen and (width < 700px) {
   body {
-    grid-template-rows: 50px 1fr 30px;
-  }
-  body footer {
-    visibility: hidden;
+    grid-template-rows: 40px 1fr 30px;
   }
 }
 body {
