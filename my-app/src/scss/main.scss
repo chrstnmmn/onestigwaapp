@@ -1,6 +1,7 @@
 @import "style.scss";
 
 body {
+
 	// background: url(../IMG/Pattern\ 45.png) rgba(255, 255, 255, 0) 0% 0% / 30px repeat;
 	background-color: $TextBox;
 	font-family: $Inter;
@@ -9,7 +10,7 @@ body {
 	grid-template-areas:
 		"Header"
 		"Content"
-		"Footer";
+		"Footer";;
 
 	height: 100vh;
 

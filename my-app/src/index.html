@@ -5,10 +5,14 @@
     <title>Awesome Capacitor App</title>
     <meta
       name="viewport"
-      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+      content="viewport-fit=auto, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
     <meta name="format-detection" content="telephone=no" />
     <meta name="msapplication-tap-highlight" content="no" />
+    <meta
+      name="theme-color"
+      content="#0b5793"
+    />
 
     <script
       type="module"
@@ -42,20 +46,20 @@
 
     <link rel="manifest" href="./manifest.json" />
   </head>
-  <body>
+  <body
+    style="
+      padding: env(safe-area-inset-top) env(safe-area-inset-right)
+        env(safe-area-inset-bottom) env(safe-area-inset-left);
+    "
+  >
     <header>
-      <div class="container">
-        <div class="logo">
-          <img
-            src="./assets/img/Logo_onesti.png"
-            alt="Logo ONE STI CALCULATOR"
-          />
-        </div>
-        <div class="button_links">
-          <a class="link" href="https://github.com/chrstnmmn">Support</a>
-          <a class="link" href="https://elms.sti.edu">ELMS</a>
-          <a class="link" href="./howto.html">How to</a>
-        </div>
+      <div class="logo">
+        <img src="./assets/img/Logo_onesti.png" alt="Logo ONE STI CALCULATOR" />
+      </div>
+      <div class="button_links">
+        <a class="link" href="https://github.com/chrstnmmn">Support</a>
+        <a class="link" href="https://elms.sti.edu">ELMS</a>
+        <a class="link" href="./howto.html">How to</a>
       </div>
     </header>
 

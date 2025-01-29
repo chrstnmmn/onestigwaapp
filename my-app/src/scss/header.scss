@@ -1,7 +1,7 @@
 @import "style.scss";
 
 header {
-	// height: 80px;
+	height: 80px;
 	width: 100%;
 	position: fixed;
 	z-index: 100;
@@ -12,81 +12,70 @@ header {
 
 	padding-block: 1rem;
 
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	justify-content: center;
+	column-gap: 30vw;
 
-	.container {
+	.button_links {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-around;
-		align-items: center;
 		justify-content: center;
-    column-gap: 30vw;
+		align-items: center;
+		gap: 43px;
+	}
 
-		.button_links {
-			display: flex;
-			flex-direction: row;
-			justify-content: end;
-			align-items: center;
-			gap: 43px;
-		}
+	.logo {
+		max-width: 12rem;
+	}
 
-		.logo {
-			max-width: 12rem;
-		}
-
-		a {
-			color: $Main;
-			font-style: normal;
-			font-size: 1.25rem;
-			font-weight: 700;
-			line-height: normal;
-			text-decoration: none;
-		}
+	a {
+		color: $Main;
+		font-style: normal;
+		font-size: 1.25rem;
+		font-weight: 700;
+		line-height: normal;
+		text-decoration: none;
 	}
 }
 @media screen and (width < 1000px) {
 	header {
-		// height: 70px;
-		padding-block: 0rem;
+		height: 60px;
 		border-bottom: .3rem solid $Accent01;
-		.container {
-			.logo {
-				max-width: 8rem;
-			}
-			a {
-				padding-block: 0.8em;
-			}
+		column-gap: 30vw;
+		
+		.logo {
+			max-width: 8rem;
+		}
+		a {
+			padding-block: 0.8em;
 		}
 	}
 }
 
 @media screen and (width < 700px) {
 	header {
-		top: 0;
-		left: 0;
-		right: 0;
-		padding-top: env(safe-area-inset-top, 0);
-		padding-bottom: 1rem;
+		height: 40px;
 		background: $Accent02;
+		border-bottom: .3rem solid $Accent01;
+		column-gap: 20vw;
 
-		align-items: center;
-		gap: 12px;
+		.button_links {
+			gap: 15px;
 
-		.container {
-			.button_links {
-				gap: 15px;
-
-				a {
-					font-size: 0.625rem;
-					font-weight: 600;
-					padding-block: 0.6em;
-				}
+			a {
+				font-size: 0.625rem;
+				font-weight: 600;
+				padding-block: 0.6em;
 			}
+		}
 
-			.logo {
-				align-self: center;
-				justify-self: center;
-				max-width: 6rem;
-			}
+		.logo {
+			align-self: center;
+			justify-self: center;
+			max-width: 6rem;
 		}
 	}
 }

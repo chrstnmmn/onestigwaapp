@@ -80,6 +80,7 @@ button {
 }
 
 header {
+  height: 80px;
   width: 100%;
   position: fixed;
   z-index: 100;
@@ -87,8 +88,6 @@ header {
   background: #0b5793;
   border-bottom: 0.5rem solid #e7c01d;
   padding-block: 1rem;
-}
-header .container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -96,17 +95,17 @@ header .container {
   justify-content: center;
   column-gap: 30vw;
 }
-header .container .button_links {
+header .button_links {
   display: flex;
   flex-direction: row;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
   gap: 43px;
 }
-header .container .logo {
+header .logo {
   max-width: 12rem;
 }
-header .container a {
+header a {
   color: #ffffff;
   font-style: normal;
   font-size: 1.25rem;
@@ -117,36 +116,33 @@ header .container a {
 
 @media screen and (width < 1000px) {
   header {
-    padding-block: 0rem;
+    height: 60px;
     border-bottom: 0.3rem solid #e7c01d;
+    column-gap: 30vw;
   }
-  header .container .logo {
+  header .logo {
     max-width: 8rem;
   }
-  header .container a {
+  header a {
     padding-block: 0.8em;
   }
 }
 @media screen and (width < 700px) {
   header {
-    top: 0;
-    left: 0;
-    right: 0;
-    padding-top: env(safe-area-inset-top, 0);
-    padding-bottom: 1rem;
+    height: 40px;
     background: #0b5793;
-    align-items: center;
-    gap: 12px;
+    border-bottom: 0.3rem solid #e7c01d;
+    column-gap: 20vw;
   }
-  header .container .button_links {
+  header .button_links {
     gap: 15px;
   }
-  header .container .button_links a {
+  header .button_links a {
     font-size: 0.625rem;
     font-weight: 600;
     padding-block: 0.6em;
   }
-  header .container .logo {
+  header .logo {
     align-self: center;
     justify-self: center;
     max-width: 6rem;
